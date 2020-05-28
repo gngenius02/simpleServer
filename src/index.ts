@@ -11,7 +11,7 @@ app.use(cors());
 app.use(helmet());
 app.use(morgan("dev"));
 app.get("/t", (req, res) => {
-  res.sendFile(path.resolve("./outs/t.js"));
+  res.send('you did it bro');
 });
 
 app.listen(port, () => console.log(`listening on port ${port}`));
